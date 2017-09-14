@@ -1,0 +1,129 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"77 C:\Users\a19356\MPLABXProjects\MCU Peripheral\PIC16F887\EEPROM.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"100
+[v _initSystem initSystem `(v  1 e 1 0 ]
+"104
+[v _initOSC initOSC `(v  1 e 1 0 ]
+"112
+[v _readEEPROM readEEPROM `(uc  1 e 1 0 ]
+"119
+[v _writeEEPROM writeEEPROM `(v  1 e 1 0 ]
+[s S83 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+`uc 1 RP 1 0 :2:5 
+`uc 1 IRP 1 0 :1:7 
+]
+"97 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic16f887.h
+[s S91 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RP0 1 0 :1:5 
+`uc 1 RP1 1 0 :1:6 
+]
+[s S95 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S99 . 1 `S83 1 . 1 0 `S91 1 . 1 0 `S95 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES99  1 e 1 @3 ]
+[s S120 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"480
+[s S129 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S134 . 1 `S120 1 . 1 0 `S129 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES134  1 e 1 @11 ]
+[s S38 . 1 `uc 1 SCS 1 0 :1:0 
+`uc 1 LTS 1 0 :1:1 
+`uc 1 HTS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+]
+"1880
+[s S44 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S49 . 1 `S38 1 . 1 0 `S44 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES49  1 e 1 @143 ]
+"3243
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"3255
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+[s S65 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"3512
+[u S72 . 1 `S65 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES72  1 e 1 @396 ]
+"3542
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"3780
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"77 C:\Users\a19356\MPLABXProjects\MCU Peripheral\PIC16F887\EEPROM.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"80
+[v main@write_char write_char `uc  1 a 1 9 ]
+"79
+[v main@eeprom_address eeprom_address `uc  1 a 1 8 ]
+"81
+[v main@read_char read_char `uc  1 a 1 7 ]
+"93
+} 0
+"119
+[v _writeEEPROM writeEEPROM `(v  1 e 1 0 ]
+{
+[v writeEEPROM@address address `uc  1 a 1 wreg ]
+[v writeEEPROM@address address `uc  1 a 1 wreg ]
+[v writeEEPROM@data data `uc  1 p 1 0 ]
+[v writeEEPROM@address address `uc  1 a 1 1 ]
+"142
+} 0
+"112
+[v _readEEPROM readEEPROM `(uc  1 e 1 0 ]
+{
+[v readEEPROM@address address `uc  1 a 1 wreg ]
+[v readEEPROM@address address `uc  1 a 1 wreg ]
+[v readEEPROM@address address `uc  1 a 1 0 ]
+"117
+} 0
+"100
+[v _initSystem initSystem `(v  1 e 1 0 ]
+{
+"102
+} 0
+"104
+[v _initOSC initOSC `(v  1 e 1 0 ]
+{
+"110
+} 0
